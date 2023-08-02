@@ -35,7 +35,7 @@ export default function Home() {
     <div className="bg-black w-full min-h-screen h-full px-6">
       <div className="text-center p-8 space-y-4">
         <h1 className="text-6xl font-bold tracking-wide">Update Piala Dunia</h1>
-        <p className="text-xl">Dapatkan update piala dunia QATAR 2022 secara Realtime dar Genggaman Anda.</p>
+        <p className="text-xl">QATAR 2022 secara Realtime dari Genggaman Anda.</p>
       </div>
       <div className="flex justify-center w-full">
         <div className="max-w-[550px] w-full border border-dashed rounded-lg p-6">
@@ -107,8 +107,6 @@ export default function Home() {
                       <span>{item.home_team.name} vs {item.away_team.name}, </span>
                       <span className="font-bold text-amber-400">{item.home_team.goals} : {item.away_team.goals}</span>
                     </h3>
-                    <p>Result: {currentMatch.winner} { currentMatch.winner !== "Draw" &&  "Wins"}</p>
-                    <p className="opacity-75">{dayjs(item.datetime).fromNow()}</p>
                   </div>
                 </div>
               </li>)}
